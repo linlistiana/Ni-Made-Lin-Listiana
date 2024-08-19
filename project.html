@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <title>Kelompok Cildi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="photo-container">
+        <img src="img lin.jpg" width="100" height="100" class="photo">
+        <button class="btn" onclick="toggleTable('identityTable1')">Identitas Lin</button>
+        <table id="identityTable1">
+            <tr>
+                <th>Nama</th>
+                <td>Ni Made Lin Listiana</td>
+            </tr>
+            <tr>
+                <th>Usia</th>
+                <td>16</td>
+            </tr>
+            <tr>
+                <th>Alamat</th>
+                <td>Jl. Trenggana No.142</td>
+            </tr>
+        </table>
+</div>
+
+    <div class="photo-container">
+        <img src="img citra.jpg" width="100" height="100" alt="Foto 2" class="photo">
+        <button class="btn" onclick="toggleTable('identityTable2')">Identitas citra</button>
+        <table id="identityTable2">
+            <tr>
+                <th>Nama</th>
+                <td>Ni Wayan Citra Lestari</td>
+            </tr>
+            <tr>
+                <th>Usia</th>
+                <td>16</td>
+            </tr>
+            <tr>
+                <th>Alamat</th>
+                <td>Jl. Antasura Banjar Pondok</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="photo-container">
+        <img src="img mudi.jpg" width="100" height="100" alt="Foto 3" class="photo">
+        <button class="btn" onclick="toggleTable('identityTable3')">Identitas Mudi</button>
+        <table id="identityTable3">
+            <tr>
+                <th>Nama</th>
+                <td>Michael Smith</td>
+            </tr>
+            <tr>
+                <th>Usia</th>
+                <td>35</td>
+            </tr>
+            <tr>
+                <th>Alamat</th>
+                <td>Jalan Thamrin No. 789, Jakarta</td>
+            </tr>
+            <tr>
+                <th>Pekerjaan</th>
+                <td>Manajer Proyek</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<script>
+    function toggleTable(tableId) {
+        var table = document.getElementById(tableId);
+        if (table.style.display === "none" || table.style.display === "") {
+            table.style.display = "table";
+        } else {
+            table.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

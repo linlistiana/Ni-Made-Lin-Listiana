@@ -1,0 +1,50 @@
+container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+photo-container {
+    margin-bottom: 40px;
+}
+
+.photo {
+    width: 150px; 
+    height: 150px;  
+}
+
+.btn {
+    margin-top: 20px; 
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+table, th, td{
+    border:1px solid black;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+#identityTable1, #identityTable2, #identityTable3 {
+    margin-top: 20px;
+    display: none; /* Tabel disembunyikan awalnya */
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+}
+
+#identityTable1 th, #identityTable2 th, #identityTable3 th, 
+#identityTable1 td, #identityTable2 td, #identityTable3 td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#identityTable1 th, #identityTable2 th, #identityTable3 th {
+    background-color: #f2f2f2;
+}
